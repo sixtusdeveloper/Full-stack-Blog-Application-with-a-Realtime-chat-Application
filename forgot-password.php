@@ -1,9 +1,6 @@
 <?php
 include_once './includes/single_header.php'; ?> 
-
-
-
-    
+ 
 <!DOCTYPE html>
 <html lang="en">
   <head>
