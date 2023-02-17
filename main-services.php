@@ -22,15 +22,15 @@ if (isset($_SESSION['user_id'])) {
 ?>
 
 <?php
-// $user_id = $_SESSION['user_id']; // assuming you have user_id in session
-// if (isset($_SESSION['user_id'])) {
-//     $query = "UPDATE blogusers SET date_time = NOW() WHERE id = $user_id";
-//     mysqli_query($connection, $query);
-// }
+$user_id = $_SESSION['user_id']; // assuming you have user_id in session
+if (isset($_SESSION['user_id'])) {
+    $query = "UPDATE blogusers SET date_time = NOW() WHERE id = $user_id";
+    mysqli_query($connection, $query);
+}
 
-// $query = "SELECT date_time FROM blogusers WHERE id = $user_id";
-// $result = mysqli_query($connection, $query);
-// $last_login = mysqli_fetch_assoc($result);
+$query = "SELECT date_time FROM blogusers WHERE id = $user_id";
+$result = mysqli_query($connection, $query);
+$last_login = mysqli_fetch_assoc($result);
 ?>
 
 <!DOCTYPE html>
